@@ -5,18 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         body{
             font-family: Arial, Helvetica, sans-serif;
             width: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .box{
             width: 800px;
-            height: 500px;
+            height: 400px;
             border-radius: 10px;
-            box-shadow: 2px 3px 5px 2px #222222;
+            box-shadow: 2px 3px 3px 2px #222222;
             display: flex;
             gap: 10px;
             background-color: white;
+            margin-bottom: 20px;
         }
         .box img{
             margin-top: 20px;
@@ -36,34 +44,78 @@
             margin-top: 20px;
         }
         .head .judul h2{
-            margin: 0;
-            height: 70px;
+            margin-bottom: 5px;
+        
         }
-        p{
+        .status p{
             background-color: #e0f7fa;
             color: #6a59fc;
             display: inline-block;
             padding: 5px 10px;
+            border-radius: 5px;
             margin-bottom:10px ;
         }
         span{
             color: #474545;
+            font-size: 15px;
         }
-        .profil, .budget{
-            display:flex ;
+        .profil img{
+          border-radius: 50px;
+          width: 40px;
+          height: 40px;
+          margin: 0;
+        }
+        .profil{
+            display: flex;
             align-items: center;
-            margin-top: 15px;
+            gap: 50px;
         }
-        .profil img, .budget img{
-            border-radius: 50px;
-            width: 40px;
-            height: 40px;
-            margin-right: 10px;
+        .budget{
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
-        .profil span, .budget span{
-            font-size: 16px;
-            font-weight: bold;
+        .nama{
+            display: flex;
+            flex-direction: column;
         }
+        .image{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .description{
+            margin-top:20px ;
+        }
+        .now{
+            display: flex;
+            gap: 50px;
+            margin-top: 30px;
+            align-items: center;
+        }
+        .date{
+            font-weight: bolder;
+            border:1px dashed gray;
+            padding: 5px;
+        }
+        .date span{
+            font-weight: normal;
+            padding-right: 100px;
+        }
+        .info{
+            font-weight: bolder;
+            border:1px dashed gray;
+            padding: 5px;
+        }
+        .info span{
+            font-weight: normal;
+            padding-right:100px ;
+        }
+        .team{
+            display: flex;
+            align-items: center;
+        }
+
     </style>
 </head>
 <body>
@@ -82,16 +134,57 @@
                 </div>
             </div>
             <div class="profil">
-                <img src="icons8-managers-64.png" alt="">
-                <span>Manager</span>
-                <span>Robert Fox</span>
-                <div class="budget">
-                    <img src="icons8-money-48.png" alt="">
-                    <span>Budget</span>
-                    <span>$64.800</span>
+                <div class="image">
+                    <img src="manger.webp" alt="">
+                    <div class="nama">
+                        <span>Manager</span>
+                        <p>Robert Fox</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <div class="budget">
+                        <img src="3d-money-icon-illustration-png.webp" alt="">
+                        <div class="money">
+                            <span>Budget</span>
+                            <p>$64.800</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
+            <div class="description">
+                <span>
+                    Flat cartoony ilustrations with vivid unblended
+                    colors and asymmetrical beautiful puple hair lady
+                </span>
+            </div>
+            <div class="now">
+            <div class="date">
+                <p>
+                    Feb 6, 2021
+                </p>
+                <span>
+                    Due date
+                </span>
+            </div>
+            <div class="info">
+                <p>
+                    $284,900
+                </p>
+                <span>
+                    Budget
+                </span>
+            </div>
+        </div>
+        <div class="team">
+            <img src="" alt="1" height="30" width="30">
+            <img src="" alt="2" height="30" width="30">
+            <div class="initials">
+                s
+            </div>
+        </div>
+        <a class="view" href="#">View Project
+            <i class="fas fa-pen"></i>
+        </a>
         </div>
     </div>
 </body>

@@ -1,54 +1,156 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-      .frame-child {
-        align-self: stretch;
-        position: relative;
-        border-radius: 50%;
-        background-color: #d9d9d9;
-        height: 100px;
-}
-.jenny-klabber {
-        position: relative;
-        font-weight: 600;
-}
-.material-symbolsverified-icon {
-        width: 12px;
-        position: relative;
-        height: 12px;
-        body {
-        margin: 0;
-        line-height: normal;
-    }
-    }
-
-    </style>
-
-</head>
-<body>
-    <div class="desktop-1">
-        <div class="ellipse-parent">
-        <div class="frame-child">
-        </div>
-        <div class="jenny-klabber-parent">
-        <div class="jenny-klabber">Jenny Klabber</div>
-        <img class="material-symbolsverified-icon" alt="" src="material-symbols:verified.svg">
-        </div>
-        </div>
-        <div class="gravity-uithunderbolt-parent">
-        <img class="gravity-uithunderbolt-icon" alt="" src="gravity-ui:thunderbolt.svg">
-        <div class="keen-themes-parent">
-        <div class="jenny-klabber">Keen Themes</div>
-        <img class="system-uiconslocation" alt="" src="system-uicons:location.svg">
-        <div class="jenny-klabber">SF, Bay Area</div>
-        <img class="iconoirmail" alt="" src="iconoir:mail.svg">
-        <div class="jenny-klabber">jenny@kteam.com</div>
-        </div>
-        </div>
-        </div>
-</body>
+<html>
+ <head>
+  <title>
+   Profile Page
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .profile-header {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .profile-header img {
+            border-radius: 50%;
+            border: 3px solid #00c853;
+            width: 100px;
+            height: 100px;
+        }
+        .profile-header h1 {
+            font-size: 24px;
+            margin: 10px 0 5px;
+        }
+        .profile-header p {
+            margin: 5px 0;
+            color: #757575;
+        }
+        .profile-header .verified {
+            color: #1da1f2;
+        }
+        .profile-header .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: #757575;
+        }
+        .profile-header .contact-info i {
+            margin-right: 5px;
+        }
+        .nav-bar {
+            background-color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #e0e0e0;
+        }
+        .nav-bar .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-bar .nav-links a {
+            text-decoration: none;
+            color: #757575;
+            font-size: 14px;
+        }
+        .nav-bar .nav-links a.active {
+            color: #1a73e8;
+            border-bottom: 2px solid #1a73e8;
+            padding-bottom: 5px;
+        }
+        .nav-bar .actions {
+            display: flex;
+            gap: 10px;
+        }
+        .nav-bar .actions button {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .nav-bar .actions button i {
+            margin-right: 5px;
+        }
+        .nav-bar .actions .more-options {
+            background-color: white;
+            color: #757575;
+            border: 1px solid #e0e0e0;
+            padding: 5px;
+            border-radius: 5px;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="profile-header">
+   <img alt="Profile picture of Jenny Klabber" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-rY0ZGx3GrXsa12IongxZuNyk.png?st=2024-09-12T05%3A10%3A48Z&amp;se=2024-09-12T07%3A10%3A48Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-12T00%3A26%3A12Z&amp;ske=2024-09-13T00%3A26%3A12Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=KPyIox5uNxypZyOjMt/wDQtkLR4bGRnxBxWTwg0K8qs%3D" width="100"/>
+   <h1>
+    Jenny Klabber
+    <i class="fas fa-check-circle verified">
+    </i>
+   </h1>
+   <div class="contact-info">
+    <span>
+     <i class="fas fa-building">
+     </i>
+     KeenThemes
+    </span>
+    <span>
+     <i class="fas fa-map-marker-alt">
+     </i>
+     SF, Bay Area
+    </span>
+    <span>
+     <i class="fas fa-envelope">
+     </i>
+     jenny@kteam.com
+    </span>
+   </div>
+  </div>
+  <div class="nav-bar">
+   <div class="nav-links">
+    <a href="#">
+     Profiles
+    </a>
+    <a href="#">
+     Projects
+    </a>
+    <a class="active" href="#">
+     Works
+    </a>
+    <a href="#">
+     Teams
+    </a>
+    <a href="#">
+     Network
+    </a>
+    <a href="#">
+     Activity
+    </a>
+    <a href="#">
+     More
+    </a>
+   </div>
+   <div class="actions">
+    <button>
+     <i class="fas fa-user-plus">
+     </i>
+     Connect
+    </button>
+    <button class="more-options">
+     <i class="fas fa-ellipsis-h">
+     </i>
+    </button>
+   </div>
+  </div>
+ </body>
 </html>
