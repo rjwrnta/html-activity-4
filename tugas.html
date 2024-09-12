@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <title>Tugas</title>
+    <style>
+        body{
+            font-family: "Inter", sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+        }
+        .container{
+            background-color: rgb(248, 249, 250);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 400px;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .header h2{
+            font-size: 15px;
+            margin: 0;
+        }
+        .header p{
+            font-size: 10px;
+            color: #6c757d;
+            margin: 0;
+        }
+        .task{
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .task-icon{
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+        }
+        .task-icon img{
+            width: 24px;
+            height: 24px;
+        }
+        .task-details{
+            display: flex;
+            flex-direction: column;
+        }
+        .task-title{
+            font-size: 15px;
+            color: #03080c;
+            margin: 0;
+            font-weight: semi bold;
+        }
+        .task-subtitle{
+            font-size: 12px;
+            color: #6c757d;
+            margin: 0;
+        }
+        .task-icon.project-briefing{
+            background-color: #e0f7e9;
+        }
+        .task-icon.concept-design{
+            background-color: #faf1d7;
+        }
+        .task-icon.functional-logics{
+            background-color: #e0f0ff;
+        }
+        .task-icon.development{
+            background-color: #ffe0e0;
+        }
+        .task-icon.testing{
+            background-color: #f0e0ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h2>
+                    Tasks overview
+                </h2>
+                <p>
+                    pending 10 tasks
+                </p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-th">
+                    <img src="icons8-square-40.png" alt="" width="24" height="24">
+                </i>
+            </div>
+        </div>
+        <div class="task">
+            <div class="task-icon project-briefing">
+                <img src="icons8-layers-48.png" alt="#" height="24" width="24">
+            </div>
+            <div class="task-details">
+                <p class="task-title">
+                    Project Briefing
+                </p>
+                <p class="task-subtitle">
+                    project Manager
+                </p>
+            </div>
+        </div>
+        <div class="task">
+            <div class="task-icon consept-design">
+                <img alt="" height="24" src="icons8-edit-48.png" width="24">
+            </div>
+            <div class="task-details">
+                <p class="task-title">
+                    Consept Design
+                </p>
+                <p class="task-subtitle">
+                    Art Director
+                </p>
+            </div>
+        </div>
+        <div class="task">
+            <div class="task-icon functional-logics">
+                <img src="icons8-popup-96.png" alt="#" height="24" width="24">
+            </div>
+            <div class="task-details">
+                <p class="task-title">
+                    Functional Logics
+                </p>
+                <p class="task-subtitle">
+                    Lead Developor
+                </p>
+            </div>
+        </div>
+        <div class="task">
+            <div class="task-icon development">
+                <img src="icons8-dynamic-links-48.png" alt="#" height="24" width="24S">
+            </div>
+            <div class="tasks-details">
+                <p class="task-title">
+                    Developments
+                </p>
+                <p class="task-subtitle">
+                    DevOps
+                </p>
+            </div>
+        </div>
+        <div class="task">
+            <div class="task-icon testing">
+                <img src="icons8-test-account-64.png" alt="#" height="24" width="24S">
+            </div>
+            <div class="tasks-details">
+                <p class="task-title">
+                    Testing
+                </p>
+                <p class="task-subtitle">
+                    QA Managers
+                </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
