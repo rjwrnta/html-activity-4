@@ -18,9 +18,9 @@
         }
         .box{
             width: 800px;
-            height: 400px;
+            height: 340px;
             border-radius: 10px;
-            box-shadow: 2px 3px 3px 2px #222222;
+            box-shadow: 1px 2px 2px 1px #524d4d;
             display: flex;
             gap: 10px;
             background-color: white;
@@ -89,7 +89,7 @@
         }
         .now{
             display: flex;
-            gap: 50px;
+            gap: 40px;
             margin-top: 30px;
             align-items: center;
         }
@@ -101,6 +101,8 @@
         .date span{
             font-weight: normal;
             padding-right: 100px;
+            padding-top: 20px;
+            padding-bottom: 10px;
         }
         .info{
             font-weight: bolder;
@@ -109,13 +111,42 @@
         }
         .info span{
             font-weight: normal;
-            padding-right:100px ;
+            padding-right:160px;
         }
         .team{
             display: flex;
             align-items: center;
+            margin-top:40px ;
         }
-
+        .team img{
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            margin-right: -10px;
+            border: 2px solid white;
+            margin: 0;
+            
+        }
+        .team .initials{
+            background-color: #007bff;
+            color: white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-left: -10px;
+        }
+        .view{
+            color: #007bff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding-left: 258px;
+        }
+        
     </style>
 </head>
 <body>
@@ -176,15 +207,15 @@
             </div>
         </div>
         <div class="team">
-            <img src="" alt="1" height="30" width="30">
-            <img src="" alt="2" height="30" width="30">
+            <img src="pp.png" alt="1" height="30" width="30">
+            <img src="manger.webp" alt="2" height="30" width="30">
             <div class="initials">
                 s
             </div>
+            <a class="view" href="#">View Project
+                <i class="fas fa-pen"></i>
+            </a>
         </div>
-        <a class="view" href="#">View Project
-            <i class="fas fa-pen"></i>
-        </a>
         </div>
     </div>
 </body>
